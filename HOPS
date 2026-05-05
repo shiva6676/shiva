@@ -1,0 +1,35 @@
+country="INDIA"
+class ace:
+    col="ACE COLLAGE"
+    def given_details(self,a,b,c,d):
+        self.tot=a+b+c
+        self.name=d
+    def display(self):
+        print ("1 NAME: ",self.name)
+        print("2 MARKS:",self.tot)
+        print("3 COLLAGE",ace.col)
+        print("4 country",country)
+        
+class bvrit:
+    col="BVRIT"
+    def set_dim(self,a,b,c):
+        self.tot=a+b
+        self.name=c
+    def display(self):
+        print ("1 NAME:",self.name)
+        print("2 MARKS:",self.tot)
+        print("3 COLLAGE",bvrit.col)
+        print("4 country",country)
+
+a=ace()
+a2=ace()
+b=bvrit()
+b2=bvrit()
+a.given_details(44,55,66,"raju")
+a2.given_details(77,88,99,"deepika")
+b.set_dim(22,55,"raju")
+b2.set_dim(66,78,"soujanya")
+a.display()
+a2.display()
+b.display()
+b2.display()
